@@ -120,6 +120,19 @@ section{padding:96px 0}
 .kv li{display:flex;gap:12px;padding:9px 0;border-top:1px solid rgba(29,68,98,.5)}
 .kv b{font-family:var(--utility);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--line);min-width:88px;padding-top:3px;font-weight:400}
 
+/* ---- toolkit ---- */
+.kit{display:grid;grid-template-columns:repeat(12,1fr);gap:26px 24px}
+.kitgroup{grid-column:span 12;display:grid;grid-template-columns:170px 1fr;gap:26px;align-items:start;padding-top:24px;border-top:1px solid rgba(29,68,98,.5)}
+.kitgroup .mono{color:var(--emerald);padding-top:8px}
+.tools{display:grid;grid-template-columns:repeat(auto-fill,minmax(122px,1fr));gap:12px}
+.tool{--cut:10px;padding:1px}
+.tool .cut-in{display:flex;align-items:center;gap:11px;padding:13px 14px;background:var(--navy);transition:background .2s}
+.tool:hover{background:var(--emerald)}
+.tool:hover .cut-in{background:var(--navy-lift)}
+.tool img{width:21px;height:21px;flex:none;filter:brightness(0) invert(1);opacity:.7;transition:opacity .2s}
+.tool:hover img{opacity:1}
+.tool span{font-size:13.5px;font-weight:500;color:var(--bone);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+
 /* ---- work ---- */
 .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
 .card{--cut:16px;text-decoration:none;display:block;transition:transform .25s}
@@ -210,6 +223,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
       <b>Suat Demirel</b>
     </a>
     <div class="navlinks mono">
+      <a href="#toolkit">Toolkit</a>
       <a href="#work">Work</a>
       <a href="#teaching">Teaching</a>
       <a href="#track">Track</a>
@@ -257,11 +271,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
           <h3>Gameplay programming in Unity</h3>
           <p>I write the systems players actually touch — movement, combat, state machines, UI flow, input. Four years of it, from course prototypes to a title on Steam.</p>
           <p class="last">Comfortable owning a feature end to end and running the board while I'm at it: I've held both lead programmer and product owner on the same project.</p>
-          <ul class="kv">
-            <li><b>Engines</b><span>Unity 6, URP, Unreal Engine 5</span></li>
-            <li><b>Code</b><span>C#, new Input System, Git</span></li>
-            <li><b>Also</b><span>AR / XR, mobile, Scrum boards</span></li>
-          </ul>
+          <a class="btn ghost" href="#work">See the projects</a>
         </div>
       </div>
 
@@ -271,7 +281,49 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
           <h3>Unity, taught from zero</h3>
           <p>My students arrive having never opened Unity. They leave with a finished, playable build they made themselves — not a tutorial they copied.</p>
           <p class="last">Live 1-on-1 and small-group lessons online. We plan every system in plain language before writing a single line, so you understand the code instead of memorising it.</p>
-          <a class="btn" href="https://preply.in/SUAT6EN3787028310" target="_blank" rel="noopener">Book a lesson on Preply</a>
+          <a class="btn" href="https://zumrutlabs.com" target="_blank" rel="noopener">Visit Zumrut Labs</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="toolkit">
+  <div class="wrap">
+    <div class="shead rise"><h2>Toolkit</h2><div class="rule"></div><div class="mono">02 — What I work in</div></div>
+    <div class="kit">
+
+      <div class="kitgroup rise">
+        <div class="mono">Engines &amp; code</div>
+        <div class="tools">
+          <div class="tool cut"><div class="cut-in"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/unity/unity-original.svg" alt="" onerror="this.style.display='none'"><span>Unity</span></div></div>
+          <div class="tool cut"><div class="cut-in"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" alt="" onerror="this.style.display='none'"><span>C#</span></div></div>
+          <div class="tool cut"><div class="cut-in"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dot-net/dot-net-original.svg" alt="" onerror="this.style.display='none'"><span>.NET</span></div></div>
+          <div class="tool cut"><div class="cut-in"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/unrealengine/unrealengine-original.svg" alt="" onerror="this.style.display='none'"><span>Unreal 5</span></div></div>
+          <div class="tool cut"><div class="cut-in"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/visualstudio/visualstudio-plain.svg" alt="" onerror="this.style.display='none'"><span>Visual Studio</span></div></div>
+          <div class="tool cut"><div class="cut-in"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rider/rider-original.svg" alt="" onerror="this.style.display='none'"><span>Rider</span></div></div>
+        </div>
+      </div>
+
+      <div class="kitgroup rise">
+        <div class="mono">Art &amp; assets</div>
+        <div class="tools">
+          <div class="tool cut"><div class="cut-in"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/blender/blender-original.svg" alt="" onerror="this.style.display='none'"><span>Blender</span></div></div>
+          <div class="tool cut"><div class="cut-in"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/photoshop/photoshop-plain.svg" alt="" onerror="this.style.display='none'"><span>Photoshop</span></div></div>
+          <div class="tool cut"><div class="cut-in"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/illustrator/illustrator-plain.svg" alt="" onerror="this.style.display='none'"><span>Illustrator</span></div></div>
+          <div class="tool cut"><div class="cut-in"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" alt="" onerror="this.style.display='none'"><span>Figma</span></div></div>
+        </div>
+      </div>
+
+      <div class="kitgroup rise">
+        <div class="mono">Workflow</div>
+        <div class="tools">
+          <div class="tool cut"><div class="cut-in"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="" onerror="this.style.display='none'"><span>Git</span></div></div>
+          <div class="tool cut"><div class="cut-in"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="" onerror="this.style.display='none'"><span>GitHub</span></div></div>
+          <div class="tool cut"><div class="cut-in"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jira/jira-original.svg" alt="" onerror="this.style.display='none'"><span>Jira</span></div></div>
+          <div class="tool cut"><div class="cut-in"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/trello/trello-plain.svg" alt="" onerror="this.style.display='none'"><span>Trello</span></div></div>
+          <div class="tool cut"><div class="cut-in"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/notion/notion-original.svg" alt="" onerror="this.style.display='none'"><span>Notion</span></div></div>
         </div>
       </div>
 
@@ -281,7 +333,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 
 <section id="work">
   <div class="wrap">
-    <div class="shead rise"><h2>Selected work</h2><div class="rule"></div><div class="mono">02 — Projects</div></div>
+    <div class="shead rise"><h2>Selected work</h2><div class="rule"></div><div class="mono">03 — Projects</div></div>
     <div class="grid">
 
       <a class="card card--wide cut rise" href="https://store.steampowered.com/app/2200420/13_Candles/" target="_blank" rel="noopener">
@@ -346,7 +398,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 
 <section id="track">
   <div class="wrap">
-    <div class="shead rise"><h2>Track</h2><div class="rule"></div><div class="mono">03 — How I got here</div></div>
+    <div class="shead rise"><h2>Track</h2><div class="rule"></div><div class="mono">04 — How I got here</div></div>
     <div class="track rise">
       <div class="step">
         <div class="yr">2020 — 2024</div>
@@ -375,10 +427,10 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
     <div class="cut rise">
       <div class="cut-in">
         <h2>Want to learn this, or build it together?</h2>
-        <p>If you're starting Unity from zero, book a lesson — that's the fastest route. For collaborations, contract work or anything else, email me directly.</p>
+        <p>If you want to learn Unity from zero, Zumrut Labs is where I teach — that is the fastest route. For collaborations, contract work or anything else, email me directly.</p>
         <div class="links">
-          <a href="https://preply.in/SUAT6EN3787028310" target="_blank" rel="noopener">Book a lesson</a>
-          <a href="mailto:suat.demirel.fi@gmail.com">suat.demirel.fi@gmail.com</a>
+          <a href="https://zumrutlabs.com" target="_blank" rel="noopener">Zumrut Labs</a>
+          <a href="mailto:msdemirelfi@gmail.com">msdemirelfi@gmail.com</a>
           <a href="https://github.com/msdemirel" target="_blank" rel="noopener">github.com/msdemirel</a>
           <a href="https://www.linkedin.com/in/suat-demirel/" target="_blank" rel="noopener">linkedin.com/in/suat-demirel</a>
           <a href="docs/resume.pdf" target="_blank" rel="noopener">Resume (PDF)</a>
