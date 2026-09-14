@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Suat Demirel | Unity developer in Espoo</title>
-<meta name="description" content="Unity developer in Espoo, Finland. C#, gameplay systems and game testing. Shipped a game on Steam. Open to junior Unity developer and QA roles.">
+<meta name="description" content="Unity developer in Espoo, Finland. C#, gameplay systems and game testing. Shipped a game on Steam. Open to junior Unity developer and QA engineer roles.">
 <link rel="icon" href="favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -106,7 +106,7 @@ section{padding:96px 0}
 .shead .mono{color:var(--line);white-space:nowrap}
 
 /* two lanes */
-.lanes{display:grid;grid-template-columns:1fr 1fr;gap:26px}
+.lanes{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
 .lane .cut-in{padding:40px 38px 38px}
 .lane .mono{margin-bottom:20px}
 .lane h3{font-size:27px;margin-bottom:16px}
@@ -188,6 +188,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 /* ---- responsive ---- */
 @media (max-width:980px){
   .hero{grid-template-columns:1fr;gap:48px}
+  .lanes{grid-template-columns:1fr}
   .facet{max-width:380px}
   .grid{grid-template-columns:repeat(2,1fr)}
   .card--wide{grid-column:span 2}
@@ -237,9 +238,9 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
   <div class="wrap">
     <div class="hero">
       <div>
-        <div class="eyebrow mono">Espoo, Finland <span>/</span> Unity <span>/</span> C# <span>/</span> Open to work</div>
+        <div class="eyebrow mono">Espoo, Finland <span>/</span> Unity <span>/</span> C# <span>/</span> Open to Unity &amp; QA engineer roles</div>
         <h1>I build games<em>in Unity and C#.</em></h1>
-        <p class="thesis">Game programmer with a title on Steam and experience at <b>Landell Games</b>, from intern to part-time programmer. I also teach Unity at Zumrut Labs. Now looking for a junior Unity developer or QA role.</p>
+        <p class="thesis">Game programmer with a title on Steam and experience at <b>Landell Games</b>, from intern to part-time programmer. I also teach Unity at Zumrut Labs. Now looking for a junior Unity developer or QA engineer role.</p>
         <div class="actions">
           <a class="btn" href="docs/resume.pdf" target="_blank" rel="noopener">View my CV</a>
           <a class="btn ghost" href="#work">See the work</a>
@@ -263,16 +264,26 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 
 <section id="about">
   <div class="wrap">
-    <div class="shead rise"><h2>What I do</h2><div class="rule"></div><div class="mono">01 — Build &amp; teach</div></div>
+    <div class="shead rise"><h2>What I do</h2><div class="rule"></div><div class="mono">01 — Build, test &amp; teach</div></div>
     <div class="lanes">
 
       <div class="lane lane--build cut rise">
         <div class="cut-in">
           <div class="mono">Building</div>
           <h3>Gameplay programming in Unity</h3>
-          <p>I write the systems players actually touch: movement, combat, AI, state machines, UI and input. At Landell Games I also fixed bugs, worked on performance and helped with game testing and QA.</p>
+          <p>I write the systems players actually touch: movement, combat, AI, state machines, UI and input. At Landell Games I also worked on performance and optimisation.</p>
           <p class="last">On 13 Candles I was lead programmer and product owner at the same time, so I am used to thinking about the code and the schedule together.</p>
           <a class="btn ghost" href="#work">See the projects</a>
+        </div>
+      </div>
+
+      <div class="lane lane--build cut rise">
+        <div class="cut-in">
+          <div class="mono">Testing</div>
+          <h3>Game testing &amp; QA</h3>
+          <p>At Landell Games I helped with game testing and QA, and tracked down and fixed bugs. I write tests with Unity Test Framework and use the Unity Profiler to find performance problems.</p>
+          <p class="last">Alongside Unity developer roles, I am looking for QA engineer roles.</p>
+          <a class="btn ghost" href="docs/resume.pdf" target="_blank" rel="noopener">View my CV</a>
         </div>
       </div>
 
@@ -341,7 +352,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
     <div class="cut rise">
       <div class="cut-in">
         <h2>Hiring for a Unity or QA role?</h2>
-        <p>I am looking for a junior Unity developer or software QA role in the Helsinki region. Email is the quickest way to reach me. If you want to learn Unity instead, that happens at Zumrut Labs.</p>
+        <p>I am looking for a junior Unity developer or QA engineer role in the Helsinki region. Email is the quickest way to reach me. If you want to learn Unity instead, that happens at Zumrut Labs.</p>
         <div class="links">
           <a href="mailto:msdemirelfi@gmail.com">msdemirelfi@gmail.com</a>
           <a href="docs/resume.pdf" target="_blank" rel="noopener">CV (PDF)</a>
